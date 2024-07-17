@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color: rgb(255, 166, 0);
+  font-size: 450px;
+}
+button {
+  background-color: burlywood;
+  color: darkblue;
+  border: none;
+  padding: 20px 50px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 40px;
+}

@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "gilroy";
+}
+body {
+  padding: 20px;
+}
+.tab {
+  display: inline-block;
+  background-color: #f1e3e3;
+  border: 2px solid #dadada;
+  padding: 12px 22px;
+  font-weight: 700;
+  margin: 10px;
+  cursor: pointer;
+}
+h3 {
+  width: 60%;
+  display: none;
+  margin-top: 20px;
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding: 5vw 7vw;
+}
+textarea {
+  resize: none;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  outline-color: darkblue;
+  font-size: 2vw;
+  padding: 1vw;
+}

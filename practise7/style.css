@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: black;
+}
+#center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#downloadbox {
+  width: 200px;
+  height: 10px;
+  background-color: #7b7171;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#progress {
+  transition: cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+  width: 0%;
+  height: 10px;
+  background-color: #ffa220;
+  border-radius: 10px;
+}
+#center h2 {
+  color: rgb(255, 64, 0);
+  font-size: 15px;
+  opacity: 0;
+}
+#center button {
+  padding: 7px 15px;
+  background-color: rgb(72, 0, 255);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  border-style: none;
+}
