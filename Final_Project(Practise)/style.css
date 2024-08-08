@@ -24,8 +24,8 @@ body {
 }
 #crsr {
   position: fixed;
-  height: 2vw;
-  width: 2vw;
+  height: 3vw;
+  width: 3vw;
   color: transparent;
   border: 0.1vw solid #ffffff;
   border-radius: 50%;
@@ -79,7 +79,7 @@ body {
   /* background-color: red; */
   opacity: 0;
   animation-name: anime;
-  animation-duration: 1.8s;
+  animation-duration: 1.45s;
   animation-iteration-count: infinite;
 }
 @keyframes anime {
@@ -87,7 +87,7 @@ body {
     opacity: 0;
     -webkit-text-stroke: 0.1vw #ffffff;
     font-weight: 100;
-    color: #ffffff;
+    color: transparent;
     font-family: "Plain Light";
   }
   48% {
@@ -119,6 +119,15 @@ body {
   height: 100vh;
   width: 100%;
 }
+#page1::before {
+  content: "01";
+  font-weight: 300;
+  font-size: 3.4vw;
+  font-family: "Silk Serif";
+  position: absolute;
+  left: 21.5%;
+  top: 23.5%;
+}
 #nav-bar {
   width: 100%;
   /* background-color: red; */
@@ -143,8 +152,8 @@ body {
   display: flex;
   align-items: center;
   height: fit-content;
-  width: 72.5%;
-  margin-left: 27.5%;
+  width: 72%;
+  margin-left: 28%;
   line-height: 1.02;
   /* margin-bottom: 1vw; */
   overflow: hidden;
@@ -156,6 +165,7 @@ body {
   letter-spacing: 0.2vw;
   word-spacing: -0.5vw;
 }
+
 .hero:nth-child(2) {
   margin-top: 10vh;
 }
@@ -234,12 +244,55 @@ body {
   min-height: 100vh;
   width: 100%;
   background-color: #151515;
+  padding: 4.5vh 2vw;
+}
+#page3 h1 {
+  font-size: 7.4vw;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 27.7%;
+}
+#page3 h1::before {
+  content: "02";
+  font-weight: 300;
+  font-size: 3.3vw;
+  font-family: "Silk Serif";
+  position: absolute;
+  left: -10%;
+  top: 4.3%;
+}
+#page3 .underline {
+  width: 70%;
+  height: 0.07vh;
+  margin-top: 4.5vh;
+  margin-bottom: 9.5vh;
+  margin-left: 28%;
+}
+#image-div-container {
+  padding: 5vh 2vw;
+  background-color: red;
+  position: relative;
+}
+.imagediv {
+  height: 60vh;
+  width: 20vw;
+  /* background-color: blue; */
+  position: relative;
+  overflow: hidden;
+}
+.imagediv img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 #page4 {
   position: relative;
   min-height: 100vh;
   width: 100%;
   background-color: #151515;
+  padding: 5vh 0;
 }
 #page4 #page4-content {
   position: relative;
@@ -250,42 +303,40 @@ body {
   font-size: 7.4vw;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
+}
+#page4-content h1::before {
+  content: "03";
+  font-weight: 300;
+  font-size: 3.4vw;
+  font-family: "Silk Serif";
+  position: absolute;
+  left: -10.2%;
+  top: 4.4%;
 }
 #page4-content .underline {
   width: 90%;
   margin-top: 4vh;
   margin-bottom: 9.5vh;
 }
-/* #page4-content .about-h4 {
-  background-color: red;
-  width: 50%;
-  line-height: 1.2;
-  word-spacing: 0.8;
-} */
-/* .about-h4 h4 {
-  font-size: 2.5vw;
-  font-weight: 500;
-} */
 #page4-content > p {
   font-size: 2.51vw;
   font-weight: 500;
   width: 55%;
   line-height: 1.19;
-  word-spacing: 0.001vw;
 }
 
 #page4-flex {
   margin-top: 11vh;
   display: flex;
-  gap: 2.8vw;
-  /* background-color: red; */
+  gap: 2.7vw;
 }
 #page4-flex img {
   height: 94.5vh;
   width: 32.5vw;
   object-fit: cover;
 }
-#page4-flex p {
+#page4-flex > p {
   /* background-color: red; */
   font-weight: 500;
   font-size: 1.17vw;
@@ -324,15 +375,125 @@ body {
   font-size: 1.2vw;
   font-weight: 400;
 }
-#page5 {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #151515;
-}
 .underline2 {
   width: 90%;
   margin-top: 9vh;
   opacity: 0.9;
   background-color: #8d8d8d;
+}
+#page4-content > h4 {
+  font-weight: 500;
+  margin-top: 6vh;
+}
+#page5 {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  padding-top: 10vh;
+}
+#elem {
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.1;
+}
+#elem h1 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-text-stroke: 0.08vw #fff;
+  color: transparent;
+  font-weight: 100;
+  animation-name: anima;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  margin-right: 1.4vw;
+  height: fit-content;
+}
+@keyframes anima {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(calc(-100% - 2.5vw));
+  }
+}
+#elem2 {
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.1;
+}
+#elem2 h1 {
+  font-size: 8vw;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-text-stroke: 0.08vw #fff;
+  color: transparent;
+  font-weight: 100;
+  animation-name: anima;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  margin-right: 1.4vw;
+  height: fit-content;
+}
+h1 span {
+  font-family: "Silk Serif";
+  -webkit-text-stroke: 0.08vw #fff;
+  color: transparent;
+  font-weight: 100;
+}
+#footer {
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 20vh;
+  padding-left: 28%;
+}
+#footer h1 {
+  font-size: 7.4vw;
+  text-transform: uppercase;
+  position: relative;
+}
+#footer h1::before {
+  content: "04";
+  font-weight: 300;
+  font-size: 3.4vw;
+  font-family: "Silk Serif";
+  position: absolute;
+  left: -10.2%;
+  top: 4.4%;
+}
+.underline {
+  height: 0.17vw;
+  background-color: #fff;
+  width: 92%;
+  margin: 4.2vh 0;
+  opacity: 0.9;
+}
+#footer-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 12%;
+}
+#footer-div .box {
+  width: 26%;
+  margin-top: 2.5vh;
+  margin-bottom: 9vh;
+}
+#footer-div h6 {
+  font-size: 1.22vw;
+  font-weight: 500;
+  margin-bottom: 5.4vh;
+}
+#footer-div h5 {
+  font-size: 1.91vw;
+  font-weight: 500;
+  line-height: 1.1;
+}
+#footer > h4 {
+  font-weight: 500;
+  margin-top: 6vh;
 }
