@@ -9,14 +9,14 @@ body {
   height: 100%;
   width: 100%;
 }
-#crsr {
-  height: 3vw;
-  width: 3vw;
-  border-radius: 50%;
-  border: 0.1vw solid #000;
-  position: absolute;
-  z-index: 99999;
+
+.mousefollower {
+  border: 2px solid #fff;
+  background-color: rgb(255, 255, 255);
+  scale: 2;
+  mix-blend-mode: difference;
 }
+
 #loader {
   position: fixed;
   z-index: 99999;
@@ -58,11 +58,14 @@ body {
 }
 .loader_h1_container h2 {
   font-size: 7vw;
-  font-weight: 600;
   text-transform: uppercase;
   animation-name: anime1;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-duration: 3.2s;
+  animation-iteration-count: 3;
+  -webkit-text-stroke: 0.1vw #000;
+  font-weight: 100;
+  color: transparent;
+  font-family: "Silk Serif";
 }
 @keyframes anime1 {
   0% {
@@ -71,7 +74,7 @@ body {
     color: #000;
     font-family: "Plain Light";
   }
-  47% {
+  48% {
     -webkit-text-stroke: 0.1vw #000;
     font-weight: 100;
     color: transparent;

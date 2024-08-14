@@ -127,7 +127,7 @@ loadingAnimation();
 // curserAnimation();
 function sherijsAniamtion() {
   Shery.imageEffect(".imagediv", {
-    style: 5,
+    style: 4,
     config: {
       a: { value: 2, range: [0, 30] },
       b: { value: 0.47, range: [-1, 1] },

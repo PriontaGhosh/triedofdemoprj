@@ -272,16 +272,15 @@ body {
 #image-div-container {
   padding: 5vh 2vw;
   background-color: red;
-  position: relative;
 }
 .imagediv {
   height: 60vh;
   width: 20vw;
-  /* background-color: blue; */
   position: relative;
   overflow: hidden;
 }
-.imagediv img {
+.imagediv > img {
+  position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
