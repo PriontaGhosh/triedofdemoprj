@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
   font-family: "Plain Light";
   src: url(/demo/Fonts/plain-light-webfont.ttf);
@@ -216,7 +223,7 @@ body {
   font-size: 3.4vw;
   font-family: "Silk Serif";
   position: absolute;
-  top: 33%;
+  top: 17%;
   left: 21.2%;
 }
 .hero .flow {
@@ -925,8 +932,8 @@ h2:nth-child(2) {
   }
   .line h2 {
     position: relative;
-    top: -8vw;
-    left: 60vw;
+    top: -8.2vw;
+    left: 61vw;
     font-size: 6.7vw;
     -webkit-text-stroke: 0.1vw #fff;
     font-family: "Silk Serif";
@@ -1065,7 +1072,7 @@ h2:nth-child(2) {
     font-size: 5vw;
     font-family: "Silk Serif";
     position: absolute;
-    top: 41%;
+    top: 16.5%;
     left: 6%;
     letter-spacing: -0.1vw;
   }
@@ -1081,6 +1088,7 @@ h2:nth-child(2) {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; /* ///// */
+    overflow: hidden;
   }
   #flag {
     height: 45vh;

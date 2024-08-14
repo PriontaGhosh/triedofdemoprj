@@ -53,15 +53,15 @@ function completeLoader() {
           h5.innerHTML = count;
           clearInterval(count_update);
         }
-      }, 35);
+      }, 28);
     },
   });
 
   tl.from(".line h1", {
     y: 100,
-    duration: 0.45,
-    delay: 0.2,
-    stagger: 0.25,
+    duration: 0.5,
+    delay: 0.25,
+    stagger: 0.33,
     opacity: 0,
   }),
     tl.from(
@@ -74,8 +74,8 @@ function completeLoader() {
       "-=.4"
     ),
     tl.to("#loader", {
-      delay: 3,
-      duration: 1.7,
+      delay: 2.6,
+      duration: 1.5,
       opacity: 0,
     });
   tl.from("#page1", {
