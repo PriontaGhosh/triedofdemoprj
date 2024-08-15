@@ -45,7 +45,7 @@ function completeLoader() {
     opacity: 0,
     onStart: function () {
       let h5 = document.querySelector("#time_count h5");
-      let count = 0;
+      let count = 6;
       let count_update = setInterval(function () {
         if (count < 100) {
           h5.innerHTML = count++;
